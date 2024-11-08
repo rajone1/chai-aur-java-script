@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clock</title>
+
+    <style>
+      body {
+        background-color: gray;
+        color: white;
+      }
+
+      #center {
+        display: flex;
+        justify-content: center;
+        /* when we use height then flex alighn item, flex direction work */
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #clock {
+        color: black;
+        font-size: 50px;
+        font-weight: 900;
+        padding: 20px 50px;
+        background-color: orange;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="center">
+      <div style="font-size: 30px; color: orange" id="banner">
+        your local string
+      </div>
+      <div id="clock"></div>
+    </div>
+    <script src="clock.js"></script>
+  </body>
+</html>

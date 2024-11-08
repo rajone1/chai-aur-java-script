@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body style="background-color: gray">
+    <h1>seond class in dom</h1>
+
+    <div class="parent">
+      <div class="child">sat</div>
+      <div class="child">sun</div>
+      <div class="child">mon</div>
+      <div class="child">tues</div>
+      <div class="child">wed</div>
+      <div class="child">thus</div>
+    </div>
+  </body>
+  <script>
+    const parent = document.querySelector(".parent");
+
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerText);
+
+    // for (let index = 0; index < parent.children.length; index++) {
+    //   console.log(parent.children[index].innerHTML);
+    //   const a = parent.children[index];
+    //   a.style.color = "green";
+    // }
+
+    // add style
+
+    parent.children[0].style.color = "red";
+    // console.log(parent.firstElementChild.innerHTML);
+    // console.log(parent.lastElementChild);
+    // console.log(parent.lastElementChild);
+    // console.log("node ", parent.childNodes);
+
+    //
+    const child = document.querySelector(".child");
+    child.nextElementSibling.style.color = "green";
+    console.log(child);
+    console.log(child.parentElement);
+    // console.log(child.nextElementSibling.innerHTML);
+  </script>
+</html>
